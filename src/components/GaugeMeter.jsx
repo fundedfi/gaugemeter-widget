@@ -1,1 +1,0 @@
-// Placeholder: Add full GaugeMeter logic here

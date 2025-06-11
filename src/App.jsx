@@ -1,7 +1,7 @@
 import React from 'react';
 
 const App = () => {
-  const partnerId = new URLSearchParams(window.location.search).get('partner_id') || 'PartnerX';
+  const partnerId = new URLSearchParams(window.location.search).get('partner_id') || 'demo';
 
   return (
     <main style={{
