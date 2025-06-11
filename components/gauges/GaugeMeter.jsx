@@ -1,0 +1,1 @@
+// GaugeMeter base component code
