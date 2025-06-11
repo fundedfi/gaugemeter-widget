@@ -1,6 +1,8 @@
 import React from 'react';
 
 const App = () => {
+  const partnerId = new URLSearchParams(window.location.search).get('partner_id');
+
   return (
     <main style={{
       padding: '2rem',
@@ -12,20 +14,26 @@ const App = () => {
       <h1 style={{ fontSize: '2.5rem', color: '#1e3a8a', marginBottom: '1rem' }}>
         🚀 Funding Gauge 2.0
       </h1>
+
       <p style={{ fontSize: '1.25rem', color: '#4b5563' }}>
-        Partner tracking enabled. GPT-style tooltips. Custom scorecards coming next...
+        Partner tracking enabled. GPT-style tooltips. Custom scorecards coming soon.
       </p>
+
+      <p style={{ marginTop: '1rem', color: '#374151' }}>
+        <strong>Partner ID:</strong> {partnerId || 'N/A'}
+      </p>
+
       <button style={{
         marginTop: '2rem',
-        background: '#3b82f6',
-        color: 'white',
+        padding: '1rem 2rem',
+        fontSize: '1rem',
+        backgroundColor: '#3b82f6',
+        color: '#fff',
         border: 'none',
         borderRadius: '8px',
-        padding: '12px 24px',
-        fontSize: '1rem',
         cursor: 'pointer'
       }}>
-        View Funding Insights →
+        View Funding Recommendations →
       </button>
     </main>
   );
